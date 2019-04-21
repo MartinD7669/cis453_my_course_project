@@ -7,6 +7,7 @@ import {
     NavLink,
     HashRouter
 } from "react-router-dom";
+import MyCart from "./MyCart";
 import All from "./All";
 import MensWatches from "./Mens";
 import WomensWatches from "./Womens";
@@ -30,12 +31,14 @@ class NavBar extends Component{
         <HashRouter>
             <ul className="header">
             <Flexbox className="flexbox" flexDirection="row">
+                <Nav><NavLink to="/MyCart">My Cart</NavLink></Nav>
                 <Nav><NavLink to="/All">All</NavLink></Nav>
                 <Nav><NavLink to="/Mens">Men's Watches</NavLink></Nav>
                 <Nav><NavLink to="/Womens">Women's Watches</NavLink></Nav>
                 </Flexbox>
             </ul>
             <div className="content">
+                <Route path="/MyCart" component={MyCart}/>
                 <Route path="/All" component={All}/>
                 <Route path="/Mens" component={MensWatches}/>
                 <Route path="/Womens" component={WomensWatches}/>
