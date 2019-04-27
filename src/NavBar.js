@@ -14,7 +14,7 @@ import WomensWatches from "./Womens";
 
 const Nav = styled.button`
 
-    font-family: Merriweather Sans;
+    font-family: 'Merriweather Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
